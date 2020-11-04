@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="add-books">
+        <h1>This is a book Library</h1>
+        <form id="book-form">
+            <div>
+                <label>Title</label><br/>
+                <input type="text" label="Title" id="book-title"></input>
+            </div>
+            <div>
+                <label>Author</label><br/>
+                <input type="text" label="Author" id="book-author"></input>
+            </div>
+            <div>
+                <label>Pages in book</label><br/>
+                <input type="number" label="Pages" id="book-pages"></input>
+            </div>
+            <div id="checkbox-div">
+                <label>Have you read this book?</label>
+                <input type="checkbox" label="Has been read?" id="book-haveRead"></input>
+            </div>
+            <button id="book-submit" onclick="addBookToLibrary()" type="button">Submit</button>
+        </form>
+        <button onclick="revealForm()" id="add-book">Add a Book</button>
+    </section>
+    <section id="library">
+        <h1>The Books</h1>
+        <div id="the-books"></div>
+    </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
